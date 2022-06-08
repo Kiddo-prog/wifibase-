@@ -43,10 +43,28 @@ export const AUTH_LINKS = [
 
 export const DesktopNavItems = () => {
         return(
-            NAV_ITEMS.map(item => (
-                <NavItem key={item.label} {...item} />
-            ))
+            <>
+                {NAV_ITEMS.map(item => (
+                    <NavItem key={item.label} {...item} />
+                ))}
+
+                {
+                    AUTH_LINKS.map(auth => (
+                        <AuthItem key={auth.label} {...auth} />
+                    ))
+                }
+            </>
         )
+}
+
+export const AuthItem = ({ label, href }) => {
+    return(
+        <div>
+        <Link href={href}>
+            <a>{label}</a>
+        </Link>
+    </div>
+    )
 }
 
 export const NavItem = ({label, href}) => {
