@@ -49,5 +49,23 @@
             "instagram": "www.instagram.com",
             "twitter": "www.twitter.com"
         }
+    ],
+
+    "Features": [
+        {
+            "heading": "Best Speed",
+            "description": "We offer the best internet speed here at Smart Technologies. So far, our clients have proven to trust our services and have given us positive feedbacks concerning this.",
+            "image": "/images/speed.png"
+        },
+        {
+            "heading": "Installation & Setup",
+            "description": "You don't have to manually do the installation yourself as we take of all that here at Smart Technologies. You can get your internet connection up and running in no time.",
+            "image": "/images/installation.png"
+        },
+        {
+            "heading": "24/7 Service",
+            "description": "By using our services, you dont have to worry about your connection going off at any point. We provide 24/7 services that covers your entire day and night.",
+            "image": "images/247.png"
+        }
     ]
 }
