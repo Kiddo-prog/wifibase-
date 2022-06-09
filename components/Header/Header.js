@@ -1,20 +1,19 @@
 import Link from "next/link"
+import { Box, Flex, HStack, Stack } from '@chakra-ui/react'
 
 export default function Header(){
     return (
-        <header>
-            <nav>
-            <div>
+        <Flex alignItems={'center'} justifyContent={'space-between'} flexDirection={'row'}>
+            <Box>
                 <Link href='/'>
                     <a>LOGO</a>
                 </Link>
-            </div>
+            </Box>
 
-            <div>
+            <Box textTransform={'uppercase'}>
                 <DesktopNavItems />
-            </div>
-            </nav>
-        </header>
+            </Box>
+        </Flex>
     )
 }
 
@@ -43,7 +42,7 @@ export const AUTH_LINKS = [
 
 export const DesktopNavItems = () => {
         return(
-            <>
+            <Stack justifyContent={'space-between'} direction={'row'}>
                 {NAV_ITEMS.map(item => (
                     <NavItem key={item.label} {...item} />
                 ))}
@@ -53,27 +52,27 @@ export const DesktopNavItems = () => {
                         <AuthItem key={auth.label} {...auth} />
                     ))
                 }
-            </>
+            </Stack>
         )
 }
 
 export const AuthItem = ({ label, href }) => {
     return(
-        <div>
+        <HStack spacing={5}>
         <Link href={href}>
             <a>{label}</a>
         </Link>
-    </div>
+    </HStack>
     )
 }
 
 export const NavItem = ({label, href}) => {
-    return (
-        <div>
+    return ( 
+        <HStack spacing={5}>
             <Link href={href}>
                 <a>{label}</a>
             </Link>
-        </div>
+        </HStack>
     )
 }
 
