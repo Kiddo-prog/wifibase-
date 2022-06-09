@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Header from "../components/Header/Header";
+import PricingBanner from "../components/Pricingpage/Banner";
+import PricingList from "../components/Pricingpage/List";
 
 
 export default function Pricing(){
@@ -10,9 +13,11 @@ export default function Pricing(){
             <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
-                <h1>Pricing Page</h1>
-            </main>
+            <>
+                <Header />
+                <PricingBanner />
+                <PricingList />
+            </>
         </>
     )
 }
