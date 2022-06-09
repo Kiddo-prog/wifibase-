@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header/Header'
+import Banner from '../components/Homepage/HomeBanner/Banner'
+import { Stack } from '@chakra-ui/react'
 
 export default function Home() {
   return (
@@ -12,9 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
+      <Stack>
         <Header />
-      </div>
+        <Banner />
+      </Stack>
     </div>
   )
 }
