@@ -67,5 +67,20 @@
             "description": "By using our services, you dont have to worry about your connection going off at any point. We provide 24/7 services that covers your entire day and night.",
             "image": "images/247.png"
         }
+    ],
+
+    "Business": [
+        {
+            "fig": "5 years",
+            "info": "in business"
+        },
+        {
+            "fig": "10,000+",
+            "info": "users"
+        },
+        {
+            "fig": "10k+",
+            "info": "monthly subscribers"
+        }
     ]
 }
