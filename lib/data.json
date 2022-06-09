@@ -1,0 +1,53 @@
+{
+    "About": 
+    [
+        {
+            "description": "We are the largest Internet Service Provider and the leader in the telecommunications market. Wifispace was founded in Lagos, in the year 2019."
+        },
+        {
+            "description": "Wifispace is committed to making Internet simple for all clients to connect across both our own network and the National Network. Our vision is to lead the market with services that harness the potential of the Internet and then differentiate with an encouraging customer service. We employ more than 2,500 enthusiastic."
+        },
+        {
+            "description": "Security breaches are on the rise, and it's not just large organizations that are being targeted. All businesses must take measures."
+        }
+    ],
+
+    "Team": 
+    [
+        {
+            "name": "John Doe",
+            "position": "Developer",
+            "fb": "www.facebook.com",
+            "instagram": "www.instagram.com",
+            "twitter": "www.twitter.com"
+        },
+        {
+            "name": "John Doe",
+            "position": "Developer",
+            "fb": "www.facebook.com",
+            "instagram": "www.instagram.com",
+            "twitter": "www.twitter.com"
+        },
+        {
+            "name": "John Doe",
+            "position": "Developer",
+            "fb": "www.facebook.com",
+            "instagram": "www.instagram.com",
+            "twitter": "www.twitter.com"
+        },
+        {
+            "name": "John Doe",
+            "position": "Developer",
+            "fb": "www.facebook.com",
+            "instagram": "www.instagram.com",
+            "twitter": "www.twitter.com"
+        },
+        {
+            "name": "John Doe",
+            "position": "Developer",
+            "fb": "www.facebook.com",
+            "instagram": "www.instagram.com",
+            "twitter": "www.twitter.com"
+        }
+    ]
+}
