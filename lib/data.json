@@ -82,5 +82,22 @@
             "fig": "10k+",
             "info": "monthly subscribers"
         }
+    ],
+    "Modem": [
+        {
+            "name": "Public Hotspot",
+            "desc": "",
+            "price": ""
+        },
+        {
+            "name": "Shared Wireless",
+            "desc": "",
+            "price": ""
+        },
+        {
+            "name": "Dedicated Broadband",
+            "desc": "",
+            "price": ""
+        }
     ]
 }
