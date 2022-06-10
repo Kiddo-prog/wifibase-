@@ -1,4 +1,14 @@
-import { Box, Text, Flex, HStack, Heading, Stack } from "@chakra-ui/react"
+import { 
+    Box, 
+    Text, 
+    Flex, 
+    HStack,
+    Heading, 
+    Stack, 
+    Image,
+    Button, 
+    VStack
+} from "@chakra-ui/react"
 import data from '../../lib/data.json'
 
 export default function AboutSection() {
@@ -19,6 +29,7 @@ export default function AboutSection() {
         </Box>
         <AboutOrg />
         <Team />
+        <JoinUsToday />
         </>
     )
 }
@@ -58,8 +69,9 @@ export const Team = () => {
                     <Text>
                         {data.TeamDescription.description}
                     </Text>
-                    <Box>
 
+                    <Box mt={10}>
+                        <Staff />
                     </Box>
                 </Box>
             </Stack>
@@ -79,6 +91,29 @@ export const WhatWeDo = () => {
 export const Staff = () => {
     return(
         <>
+            <Image src={'/images/about-team.jpg'} alt="team profile" />
         </>
+    )
+}
+
+export const JoinUsToday = () => {
+    return(
+        <Stack justifyContent={'center'} alignItems={'center'}>
+            <Box bgColor={'rgb(44, 75, 255)'} padding={'100px'}>
+                <VStack>
+                    <Heading textAlign={'center'} color={'white'} w={'80%'} mb={10}>
+                        Join 73,000+ growing businesses that use Wifibase to build their brands
+                    </Heading>
+                    <Button 
+                        bgColor={'rgb(233, 114, 132)'} 
+                        p={10} 
+                        color={'white'}
+                        _hover={{bgColor: "pink.300"}}
+                        >
+                        Get Started
+                    </Button>
+                </VStack>
+            </Box>
+        </Stack>
     )
 }
