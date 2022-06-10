@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AboutDetail from "../components/AboutPage/AboutDetail";
 
 
 export default function About(){
@@ -10,9 +11,7 @@ export default function About(){
             <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
-                <h1>About Page</h1>
-            </main>
+            <AboutDetail />
         </>
     )
 }
