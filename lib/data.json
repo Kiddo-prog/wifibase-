@@ -12,6 +12,10 @@
         }
     ],
 
+    "TeamDescription": 
+    {
+        "description": "We’re committed to building a diverse team and a work environment that’s inclusive of people of all backgrounds. Get to know the wonderful team who's building our product, supporting our customers, and creating educational content."
+    },
     "Team": 
     [
         {
