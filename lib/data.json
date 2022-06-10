@@ -86,18 +86,40 @@
     "Modem": [
         {
             "name": "Public Hotspot",
-            "desc": "",
-            "price": ""
+            "desc": "For individuals and businesses getting started with social media.",
+            "price": "0",
+            "features": 
+            [
+                "Basic publishing tools", 
+                "Landing page builder"
+            ],
+            "desc_features": "Add additional channels for $5/month Billed at $72 "
         },
         {
             "name": "Shared Wireless",
-            "desc": "",
-            "price": ""
+            "desc": "For professionals who use publishing, analytics & engagement tools.",
+            "price": "6",
+            "features": 
+                [
+                    "Planning & publishing tools",
+                    "Analytics tools",
+                    "Engagement tools",
+                    "Landing page builder"
+                ],
+            "desc_features": "Add additional channels for $6/month Billed monthly"
         },
         {
             "name": "Dedicated Broadband",
-            "desc": "",
-            "price": ""
+            "desc": "For teams who want unlimited user seating, collaboration, and reporting.",
+            "price": "12",
+            "features":
+                [
+                    "Essentials features, plus",
+                    "Unlimited team members & clients",
+                    "Draft collaboration tools",
+                    "Easy, clear exportable reports"
+                ],
+            "desc_features": "Add additional channels for $12/month Billed monthly"
         }
     ]
 }
