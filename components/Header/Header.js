@@ -26,6 +26,10 @@ export const NAV_ITEMS = [
     {
         label: 'pricing',
         href: '/pricing'
+    },
+    {
+        label: 'services',
+        href: '/services'
     }
 ]
 
