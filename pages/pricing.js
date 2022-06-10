@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header/Header";
-import PricingBanner from "../components/Pricingpage/Banner";
-import PricingList from "../components/Pricingpage/List";
+import PricingDetail from "../components/Pricingpage/PricingDetail";
 
 
 export default function Pricing(){
@@ -15,8 +14,7 @@ export default function Pricing(){
 
             <>
                 <Header />
-                <PricingBanner />
-                <PricingList />
+                <PricingDetail />
             </>
         </>
     )
