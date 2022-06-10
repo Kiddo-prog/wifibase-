@@ -1,9 +1,10 @@
-import { Box, Text, Flex, HStack, Heading } from "@chakra-ui/react"
+import { Box, Text, Flex, HStack, Heading, Stack } from "@chakra-ui/react"
 import data from '../../lib/data.json'
 
 export default function AboutSection() {
     return(
         <>
+        <Box backgroundImage={'url("/images/about-map.gif")'} p={10}>
             <Box w={'50%'} mx={'auto'} my={20}>
                 <Flex alignItems={'center'} direction={'column'} justifyContent={'center'}>
                     {
@@ -15,14 +16,16 @@ export default function AboutSection() {
                     }
                 </Flex>
             </Box>
-
-            <Team />
+        </Box>
+        <AboutOrg />
+        <Team />
         </>
     )
 }
 
-export const Team = () => {
+export const AboutOrg = () => {
     return(
+        <>
         <HStack justifyContent={'center'} spacing={30} textAlign={'center'}>
             <Box>
                 <Heading size={'4xl'}>
@@ -42,6 +45,25 @@ export const Team = () => {
                 </Text>
             </Box>
         </HStack>
+        </>
+    )
+}
+
+export const Team = () => {
+    return(
+        <>
+            <Stack alignItems={'center'} justifyContent={'center'}>
+                <Box w={'50%'} mx={'auto'} my={20}>
+                    <Heading size={'xl'} mb={5}>TEAM</Heading>
+                    <Text>
+                        {data.TeamDescription.description}
+                    </Text>
+                    <Box>
+
+                    </Box>
+                </Box>
+            </Stack>
+        </>
     )
 }
 
@@ -51,5 +73,12 @@ export const WhatWeDo = () => {
             {/* icons */}
             <Heading></Heading>
         </Box>
+    )
+}
+
+export const Staff = () => {
+    return(
+        <>
+        </>
     )
 }
