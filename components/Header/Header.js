@@ -1,19 +1,34 @@
-import Link from "next/link"
-import { Box, Flex, HStack, Stack } from '@chakra-ui/react'
+import { Box, Link, Flex, HStack, Stack, Button } from '@chakra-ui/react'
 
 export default function Header(){
     return (
-        <Flex alignItems={'center'} justifyContent={'space-between'} flexDirection={'row'}>
-            <Box>
-                <Link href='/'>
-                    <a>LOGO</a>
-                </Link>
-            </Box>
+        <>
+        <Box 
+            backgroundColor={'whiteAlpha.100'} 
+            p={6} 
+            fontFamily={"'Poppins', sans-serif"} 
+            fontWeight={300} 
+            letterSpacing={0.5} 
+            fontSize={["8", "10", "14", "18"]}
+        >
+            <Flex 
+                alignItems={'center'} 
+                alignContent={'center'}
+                justifyContent={'space-between'} 
+                flexDirection={'row'}
+            >
+                <Box>
+                    <Link href='/'>
+                        LOGO
+                    </Link>
+                </Box>
 
-            <Box textTransform={'uppercase'}>
-                <DesktopNavItems />
-            </Box>
-        </Flex>
+                <Box textTransform={'uppercase'}>
+                    <DesktopNavItems />
+                </Box>
+            </Flex>
+        </Box>
+        </>
     )
 }
 
@@ -46,26 +61,41 @@ export const AUTH_LINKS = [
 
 export const DesktopNavItems = () => {
         return(
-            <Stack justifyContent={'space-between'} direction={'row'}>
+            <Stack justifyContent={'space-between'} direction={'row'} spacing={5}>
+                <HStack spacing={5}>
                 {NAV_ITEMS.map(item => (
                     <NavItem key={item.label} {...item} />
                 ))}
+                </HStack>
 
+                <HStack>
                 {
                     AUTH_LINKS.map(auth => (
                         <AuthItem key={auth.label} {...auth} />
                     ))
                 }
+                </HStack>
             </Stack>
         )
 }
 
 export const AuthItem = ({ label, href }) => {
     return(
-        <HStack spacing={5}>
-        <Link href={href}>
-            <a>{label}</a>
-        </Link>
+        <HStack spacing={5} 
+            _first={{
+                _hover: {textDecoration: 'underline'}
+            }}
+            _last={{
+                backgroundColor: 'pink.400', 
+                color: 'white',
+                 _hover: {
+                    backgroundColor: 'pink.600'
+                    }
+                }}
+            >
+        <Button as="a" href={href} backgroundColor={'inherit'} _hover={'inherit'}>
+            {label}
+        </Button>
     </HStack>
     )
 }
@@ -73,8 +103,8 @@ export const AuthItem = ({ label, href }) => {
 export const NavItem = ({label, href}) => {
     return ( 
         <HStack spacing={5}>
-            <Link href={href}>
-                <a>{label}</a>
+            <Link href={href} _hover={{color: 'blue'}}>
+                {label}
             </Link>
         </HStack>
     )
