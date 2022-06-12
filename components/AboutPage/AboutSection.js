@@ -19,7 +19,7 @@ export default function AboutSection() {
                 <Flex alignItems={'center'} direction={'column'} justifyContent={'center'}>
                     {
                         data.About.map(item => (
-                            <Text mb={10}>
+                            <Text mb={10} key={item.description}>
                                 {item.description}
                             </Text>
                         ))
