@@ -10,6 +10,7 @@ export default function Header(){
             fontWeight={300} 
             letterSpacing={0.5} 
             fontSize={["8", "10", "14", "18"]}
+            mb={{base: 3, md: 4, lg: 5}}
         >
             <Flex 
                 alignItems={'center'} 
