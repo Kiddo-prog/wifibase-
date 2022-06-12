@@ -7,8 +7,8 @@ export default function PricingBanner(){
             Browser Flawlessly. Subscribe Effortlessly. Interact Authentically.
             </Heading>
             <Text>
-                We've built simpler network modem for busy people. 
-                Enjoy our free plan as you get started, 
+                We've built simpler network modem for busy people. &lsquo;
+                Enjoy our free plan as you get started, &lsquo;
                 or trial our full toolkit priced to make browsing on social affordable.
             </Text>
         </Box>
