@@ -99,9 +99,16 @@ export const Staff = () => {
 export const JoinUsToday = () => {
     return(
         <Stack justifyContent={'center'} alignItems={'center'}>
-            <Box bgColor={'rgb(44, 75, 255)'} padding={'100px'}>
+            <Box bgColor={'rgb(44, 75, 255)'} padding={12}>
                 <VStack>
-                    <Heading textAlign={'center'} color={'white'} w={'80%'} mb={10}>
+                    <Heading 
+                        textAlign={'center'} 
+                        color={'white'} 
+                        w={{base: '100%', md: '80%', lg: '80%'}} 
+                        mb={10}
+                        fontFamily={"'Poppins', sans-serif"}
+                        fontSize={{base: '1em', md: '1.5em', lg: '2em'}}
+                        lineHeight={'1.5em'}>
                         Join 73,000+ growing businesses that use Wifibase to build their brands
                     </Heading>
                     <Button 
@@ -110,7 +117,7 @@ export const JoinUsToday = () => {
                         color={'white'}
                         _hover={{bgColor: "pink.300"}}
                         >
-                        Get Started
+                        Get started now
                     </Button>
                 </VStack>
             </Box>
