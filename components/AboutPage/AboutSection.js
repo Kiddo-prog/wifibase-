@@ -43,7 +43,17 @@ export default function AboutSection() {
 export const AboutOrg = () => {
     return(
         <>
-        <Flex justifyContent={'center'} spacing={'5em'} textAlign={'center'} rowGap={5} columnGap={5} flexDirection={{base: 'column', md: 'row', lg: 'row'}}>
+        <Flex 
+            justifyContent={'center'} 
+            spacing={'5em'} 
+            textAlign={'center'} 
+            rowGap={5} 
+            columnGap={5} 
+            flexDirection={{
+                base: 'column', 
+                md: 'row', 
+                lg: 'row'}}
+            >
             <Box>
                 <Heading fontFamily={"'Poppins', sans-serif"} color={'pink.600'} fontSize={{base: '2.5em', md: '3em', lg: '4em'}}>
                     20
