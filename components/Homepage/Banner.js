@@ -11,6 +11,7 @@ import {
 
 export default function Banner(){
     return(
+      <Box mt={"2em"}>
             <Flex 
                 alignItems={'flex-start'} 
                 justifyContent={'space-around'} 
@@ -48,5 +49,6 @@ export default function Banner(){
                   flex={5}
                 />
             </Flex>
+            </Box>
     )
 }
