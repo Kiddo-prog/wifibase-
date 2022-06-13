@@ -5,7 +5,7 @@ import { TiTick } from 'react-icons/ti'
 export default function PricingList(){
     return(
         <>
-            <Heading textAlign={'center'} fontFamily={"'Poppins', sans-serif"} my={10}>Choose your Modem</Heading>
+            <Heading textAlign={'center'} fontFamily={"'Poppins', sans-serif"} my={10} mx={4} fontSize={{base: 'xl', md: '2xl', lg: '3xl'}}>Choose your Modem</Heading>
             <Box>
                 <ModemList />
             </Box> 
