@@ -2,7 +2,6 @@ import {
     Box, 
     Text, 
     Flex, 
-    HStack,
     Heading, 
     Stack, 
     Image,
@@ -15,7 +14,12 @@ import { TiTick } from 'react-icons/ti'
 export default function AboutSection() {
     return(
         <>
-            <Box backgroundImage={'url("/images/about-map.gif")'} backgroundSize={'contain'} backgroundPosition={'center'} p={10}>
+            <Box 
+                backgroundImage={'url("/images/about-map.gif")'} 
+                backgroundRepeat={'no-repeat'}
+                backgroundSize={'contain'} 
+                backgroundPosition={'center'} 
+                p={10}>
                 <Box w={{base: '100%', md: '100%', lg: '50%'}} mx={'auto'} my={20}>
                     <Flex alignItems={'center'} direction={'column'} justifyContent={'center'}>
                         {
@@ -55,7 +59,14 @@ export const AboutOrg = () => {
                 lg: 'row'}}
             >
             <Box>
-                <Heading fontFamily={"'Poppins', sans-serif"} color={'pink.600'} fontSize={{base: '2.5em', md: '3em', lg: '4em'}}>
+                <Heading 
+                    fontFamily={"'Poppins', sans-serif"} 
+                    color={'pink.600'} 
+                    fontSize={{
+                        base: '2.5em', 
+                        md: '3em', 
+                        lg: '4em'
+                    }}>
                     20
                 </Heading>
                 <Text fontFamily={"'Poppins', sans-serif"} textTransform={'capitalize'} fontSize={{base: '1em', md: '1.2em', lg: '1.4em'}}>
