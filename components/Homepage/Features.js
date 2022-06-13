@@ -21,7 +21,7 @@ export default function Features(){
                                 key={features.description}
                                 justifyContent={'space-around'}
                                 flexDirection={{base: 'column', md: 'row', lg: 'row'}}
-                                marginX={20}
+                                marginX={{base: 10, md: 15, lg: 20}}
                                 marginY={20}
                                 _even={{
                                     sm: {flexDirection: 'row-reverse', flexWrap: 'wrap'},
@@ -29,7 +29,7 @@ export default function Features(){
                                     lg: {flexWrap: 'nowrap', flexDirection: 'column'}
                                 }}
                                  >
-                                <Box marginX={{base: 5, md: 7, lg: 10}}>
+                                <Box marginX={{base: 2, md: 7, lg: 10}}>
                                     <HStack >
                                         <Heading
                                             fontFamily={"'Poppins', sans-serif"}
@@ -47,7 +47,7 @@ export default function Features(){
                                         <Text 
                                             fontFamily={"'Poppins', sans-serif"}
                                             mt={5}
-                                            fontSize={{base: '0.7em', md: '0.8em', lg: '1em'}}>
+                                            fontSize={{base: '1em', md: '0.8em', lg: '1em'}}>
                                             {features.description}
                                         </Text>
                                     <Flex
@@ -105,6 +105,9 @@ export default function Features(){
                                                 fontSize={{base: '2em', md: '2em', lg: '2.5em'}}
                                                 fontFamily={"'Poppins', sans-serif"}
                                                 textAlign={'center'}
+                                                color={'rgb(44, 75, 255)'}
+                                                fontWeight={800}
+                                                letterSpacing={2}
                                                 >{business.fig}</Heading>
                                             <Text 
                                                 textAlign={'center'} 
