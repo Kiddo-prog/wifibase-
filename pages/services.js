@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/Header/Header";
 
 
 export default function Service(){
@@ -10,9 +11,7 @@ export default function Service(){
             <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
-                <h1>Service Page</h1>
-            </main>
+            <Header />
         </>
     )
 }
