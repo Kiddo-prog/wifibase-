@@ -53,6 +53,8 @@ export default function Features(){
                                     <Flex
                                         mt={10}
                                         flexDirection={{base: 'column', md: 'row', lg: 'row'}}
+                                        rowGap={5}
+                                        columnGap={5}
                                         >
                                         <Button 
                                             as={'a'} 
@@ -62,10 +64,8 @@ export default function Features(){
                                             _hover={{bgColor: 'blue'}}
                                             fontFamily={"'Poppins', sans-serif"}
                                             letterSpacing={1}
-                                            mx={{base: 0, md: 5, lg: 5}}
                                             fontSize={{base: '0.7em', md: '0.8em', lg: '1em'}}
                                             w={{base: '100%', md: 'auto', lg: 'auto'}}
-                                            mb={5}
                                             >
                                                 Get started now
                                         </Button>
