@@ -1,31 +1,14 @@
 import { Box, Flex, Heading, Text, HStack, Button, Stack } from "@chakra-ui/react"
 import data from '../../lib/data.json'
+import { TiTick } from 'react-icons/ti'
 
 export default function PricingList(){
     return(
         <>
-        <Box 
-            backgroundImage={"url('images/pricing_b.jpg')"} 
-            backgroundSize={'cover'} 
-            backgroundPosition={'center'} 
-            backgroundRepeat={'no-repeat'}
-            width={'100%'} 
-            height={'500px'}
-            mt={'5em'}
-            >
-        </Box>
-        <Heading textAlign={'center'}>Choose your Modem</Heading>
-            <Box 
-            //  backgroundImage={"url('images/pricing_b.jpg')"} 
-            //  backgroundSize={'cover'} 
-            //  backgroundPosition={'center'} 
-            //  backgroundRepeat={'no-repeat'}
-            //  width={'100%'} 
-            //  height={'500px'}
-            //  mt={'5em'}
-             >
+            <Heading textAlign={'center'} fontFamily={"'Poppins', sans-serif"} my={10}>Choose your Modem</Heading>
+            <Box>
                 <ModemList />
-            </Box>
+            </Box> 
         </>
     )
 }
@@ -33,22 +16,23 @@ export default function PricingList(){
 
 export const ModemList = () => {
     return(
-        <Box>
-            <HStack alignItems={'flex-start'} justifyContent={'space-around'} flexDirection={'row'} spacing={3}>
+        <Box marginX={{lg: 10}} mb={10}>
+            <Flex alignItems={'flex-start'} justifyContent={'center'} flexDirection={'row'} flexWrap={{base: 'wrap', md: 'wrap', lg: 'nowrap'}} rowGap={5}>
                 {data.Modem.map((item) => (
-                    <Box key={item.name} borderWidth={2} p={10} m={5}>
-                        <Heading size={'lg'}>
+                    <Box key={item.name} borderWidth={2} p={10} m={5} bgColor={'white'} fontFamily={"'Poppins', sans-serif"}>
+                        <Heading size={'lg'} fontWeight={'700'} mb={4}>
                             {item.name}
                         </Heading>
-                        <Text>
+                        <Text color={'gray.500'} mb={6}>
                             {item.desc}
                         </Text>
                         <HStack alignItems={'flex-start'} spacing={10}>
-                            <Heading size={'2xl'} fontWeight={'bold'}>
-                                <Text as={'sup'} fontSize={'lg'}>$</Text>{item.price} 
+                            <Heading size={{base: 'lg', md: '2xl', lg: '3xl'}} fontWeight={'700'}>
+                                <Text as={'sup'} fontSize={'lg'}>$</Text>
+                                    {item.price} 
                             </Heading>
                         </HStack>
-                        <Text>
+                        <Text fontWeight={'500'} fontSize={'0.9em'} mt={5}>
                             {item.desc_features}
                         </Text>
                         <Button 
@@ -57,6 +41,8 @@ export const ModemList = () => {
                             bgColor={'rgb(44, 75, 255)'} 
                             color={'white'}
                             _hover={{bgColor: 'blue'}}
+                            fontWeight={'400'}
+                            my={5}
                         >
                             Get Started
                         </Button>
@@ -64,31 +50,22 @@ export const ModemList = () => {
                             {
                                 item.features.map((feature) => (
                                     <Box key={feature}>
-                                        <HStack>
-                                            <Text as={'span'}>
-                                                <svg xmlns="http://www.w3.org/2000/svg" 
-                                                    width="24" 
-                                                    height="24" 
-                                                    viewBox="0 0 24 24"
-                                                    fill="black"
-                                                    >
-                                                        <path d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-5.541 
-                                                                8.409l-1.422-1.409-7.021 7.183-3.08-2.937-1.395 
-                                                                1.435 4.5 4.319 8.418-8.591z"/>
-                                                </svg>
+                                        <Flex rowGap={10} columnGap={5}>
+                                            <Text>
+                                                <TiTick />
                                             </Text>
 
                                             <Text>
                                                 {feature}
                                             </Text>
-                                        </HStack>
+                                        </Flex>
                                     </Box>
                                 ))
                             }
                         </Box>
                     </Box>
                 ))}
-            </HStack>
+            </Flex>
         </Box>
     )
 }
