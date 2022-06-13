@@ -15,7 +15,7 @@ import { TiTick } from 'react-icons/ti'
 export default function AboutSection() {
     return(
         <>
-            <Box backgroundImage={'url("/images/about-map.gif")'} p={10}>
+            <Box backgroundImage={'url("/images/about-map.gif")'} backgroundSize={'contain'} backgroundPosition={'center'} p={10}>
                 <Box w={{base: '100%', md: '100%', lg: '50%'}} mx={'auto'} my={20}>
                     <Flex alignItems={'center'} direction={'column'} justifyContent={'center'}>
                         {
@@ -43,7 +43,7 @@ export default function AboutSection() {
 export const AboutOrg = () => {
     return(
         <>
-        <HStack justifyContent={'center'} spacing={'5em'} textAlign={'center'}>
+        <Flex justifyContent={'center'} spacing={'5em'} textAlign={'center'} rowGap={5} columnGap={5} flexDirection={{base: 'column', md: 'row', lg: 'row'}}>
             <Box>
                 <Heading fontFamily={"'Poppins', sans-serif"} color={'pink.600'} fontSize={{base: '2.5em', md: '3em', lg: '4em'}}>
                     20
@@ -61,7 +61,7 @@ export const AboutOrg = () => {
                     customers
                 </Text>
             </Box>
-        </HStack>
+        </Flex>
         </>
     )
 }
