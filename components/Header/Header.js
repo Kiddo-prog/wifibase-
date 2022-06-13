@@ -1,5 +1,7 @@
 import { Box, Link, Flex, HStack, Stack, Button } from '@chakra-ui/react'
 
+import { GiHamburgerMenu } from 'react-icons/gi'
+
 export default function Header(){
     return (
         <>
@@ -8,9 +10,8 @@ export default function Header(){
             p={6} 
             fontFamily={"'Poppins', sans-serif"} 
             fontWeight={300} 
-            letterSpacing={0.5} 
-            fontSize={["8", "10", "14", "18"]}
-            mb={{base: 3, md: 4, lg: 5}}
+            letterSpacing={0.5}
+            mb={{base: 0, md: 4, lg: 5}}
         >
             <Flex 
                 alignItems={'center'} 
@@ -24,8 +25,18 @@ export default function Header(){
                     </Link>
                 </Box>
 
-                <Box textTransform={'uppercase'}>
+                <Box 
+                    textTransform={'uppercase'} 
+                    display={{
+                        base: 'none', 
+                        md: 'none', 
+                        lg: 'block'
+                    }}>
                     <DesktopNavItems />
+                </Box>
+
+                <Box display={{base: 'block', md: 'block', lg: 'none'}} cursor={'pointer'}>
+                    <GiHamburgerMenu />
                 </Box>
             </Flex>
         </Box>
@@ -94,7 +105,13 @@ export const AuthItem = ({ label, href }) => {
                     }
                 }}
             >
-        <Button as="a" href={href} backgroundColor={'inherit'} _hover={'inherit'}>
+        <Button 
+            as="a" 
+            href={href} 
+            backgroundColor={'inherit'} 
+            _hover={'inherit'}
+            fontWeight={'inherit'}
+            fontSize={["8", "10", "14", "18"]}>
             {label}
         </Button>
     </HStack>
