@@ -19,8 +19,10 @@ export default function AboutSection() {
                 backgroundRepeat={'no-repeat'}
                 backgroundSize={'contain'} 
                 backgroundPosition={'center'} 
-                p={10}>
-                <Box w={{base: '100%', md: '100%', lg: '50%'}} mx={'auto'} my={20}>
+                minH={'100vh'}
+                px={'10'}
+                py={'8'}>
+                <Box w={{base: '100%', md: '100%', lg: '50%'}} mx={'auto'} my={10}>
                     <Flex alignItems={'center'} direction={'column'} justifyContent={'center'}>
                         {
                             data.About.map(item => (
@@ -46,44 +48,69 @@ export default function AboutSection() {
 
 export const AboutOrg = () => {
     return(
-        <>
+        <Box>
         <Flex 
             justifyContent={'center'} 
             spacing={'5em'} 
             textAlign={'center'} 
             rowGap={5} 
-            columnGap={5} 
+            columnGap={'10em'} 
             flexDirection={{
                 base: 'column', 
                 md: 'row', 
                 lg: 'row'}}
+                bgColor={'gray.200'}
+                p={10}
             >
             <Box>
                 <Heading 
                     fontFamily={"'Poppins', sans-serif"} 
                     color={'pink.600'} 
                     fontSize={{
-                        base: '2.5em', 
-                        md: '3em', 
-                        lg: '4em'
-                    }}>
+                        base: '3.5em', 
+                        md: '4em', 
+                        lg: '4.5em'
+                    }}
+                    fontWeight={800}>
                     20
                 </Heading>
-                <Text fontFamily={"'Poppins', sans-serif"} textTransform={'capitalize'} fontSize={{base: '1em', md: '1.2em', lg: '1.4em'}}>
+                <Text 
+                    fontFamily={"'Poppins', sans-serif"} 
+                    textTransform={'capitalize'} 
+                    fontSize={{
+                        base: '1.2em', 
+                        md: '1.3em', 
+                        lg: '1.4em'}
+                    }>
                     teammates
                 </Text>
             </Box>
 
             <Box>
-                <Heading fontFamily={"'Poppins', sans-serif"} color={'green'} fontSize={{base: '2.5em', md: '3em', lg: '4em'}}>
+                <Heading 
+                    fontFamily={"'Poppins', sans-serif"} 
+                    color={'green'} 
+                    fontSize={{
+                                base: '3.5em', 
+                                md: '4em', 
+                                lg: '4.5em'
+                            }}
+                    fontWeight={800}>
                     10,000
                 </Heading>
-                <Text fontFamily={"'Poppins', sans-serif"} textTransform={'capitalize'} fontSize={{base: '1em', md: '1.2em', lg: '1.4em'}}>
+                <Text 
+                    fontFamily={"'Poppins', sans-serif"} 
+                    textTransform={'capitalize'} 
+                    fontSize={{
+                                base: '1.2em', 
+                                md: '1.3em', 
+                                lg: '1.4em'
+                            }}>
                     customers
                 </Text>
             </Box>
         </Flex>
-        </>
+        </Box>
     )
 }
 
