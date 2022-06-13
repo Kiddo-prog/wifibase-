@@ -1,14 +1,17 @@
 import { Heading } from "@chakra-ui/react"
 import { Flex, Box, Image, Text, Button, Spacer } from "@chakra-ui/react"
 import data from '../../lib/data.json'
+import { JoinUsToday } from "../AboutPage/AboutSection"
 
 export default function Team() {
     return(
+        <>
+        <Box>
             <Flex 
-                marginTop={'10em'}
                 flexDirection={{base: 'column-reverse', md: 'row', lg: 'row'}}
                 alignItems={'center'}
                 textAlign={{base: 'center', md: 'left', lg: 'left'}}
+                mt={20}
             >
                     <Box flex={5}>
                     <Image
@@ -50,5 +53,11 @@ export default function Team() {
                         </Button>
                     </Box>
                 </Flex>
+
+            <Box marginTop={'10em'}>
+                <JoinUsToday />
+            </Box>
+            </Box>
+            </>
     )
 }
