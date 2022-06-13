@@ -20,7 +20,8 @@ export default function Features(){
                             <Flex 
                                 key={features.description}
                                 justifyContent={'space-around'}
-                                flexDirection={{base: 'column', md: 'row', lg: 'row'}}
+                                flexDirection={{base: 'column', md: 'column', lg: 'row'}}
+                                alignItems={'center'}
                                 marginX={{base: 10, md: 15, lg: 20}}
                                 marginY={20}
                                 _even={{
@@ -47,12 +48,12 @@ export default function Features(){
                                         <Text 
                                             fontFamily={"'Poppins', sans-serif"}
                                             mt={5}
-                                            fontSize={{base: '1em', md: '0.8em', lg: '1em'}}>
+                                            fontSize={{base: '1.2em', md: '1.2em', lg: '1em'}}>
                                             {features.description}
                                         </Text>
                                     <Flex
                                         mt={10}
-                                        flexDirection={{base: 'column', md: 'row', lg: 'row'}}
+                                        flexDirection={{base: 'column', md: 'column', lg: 'row'}}
                                         rowGap={5}
                                         columnGap={5}
                                         >
