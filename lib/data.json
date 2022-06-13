@@ -126,5 +126,8 @@
             "desc_features": "Add additional channels for $12/month Billed monthly"
         }
     ],
-    "CustomerDescription": "Our customer advocates are standing by 24/7 to support you via email and social media. We also have a comprehensive, regularly updated help center for those who prefer to find help yourself. Or if you are feeling social, we have a supportive community of creators, small business owners, and marketers on social media."
+    "CustomerDescription": "Our customer advocates are standing by 24/7 to support you via email and social media. We also have a comprehensive, regularly updated help center for those who prefer to find help yourself. Or if you are feeling social, we have a supportive community of creators, small business owners, and marketers on social media.",
+    "Values": ["We want to build a different type of company that’s focused not only on the bottom line, but also the happiness of our customers and team, and our personal growth along the journey.", "Wifispace is committed to making Internet simple for all clients to connect across both our own network and the National Network. Our vision is to lead the market with services that harness the potential of the Internet and then differentiate with an encouraging customer service. We employ more than 2,500 enthusiastic.", "Security breaches are on the rise, and it’s not just large organizations that are being targeted. All businesses must take measures which include: "],
+    "WhatWeDo": ["Smartnet Internet Router new", "Free Modem and Router", "Latest WIFI Technology", "We Provide Excellent Services"]
+
 }
