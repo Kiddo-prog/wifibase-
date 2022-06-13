@@ -22,7 +22,7 @@ export default function Features(){
                                 justifyContent={'space-around'}
                                 flexDirection={{base: 'column', md: 'column', lg: 'row'}}
                                 alignItems={'center'}
-                                marginX={{base: 10, md: 10, lg: 20}}
+                                marginX={{base: 5, md: 5, lg: 10}}
                                 marginY={20}
                                 _even={{
                                     sm: {flexDirection: 'row-reverse', flexWrap: 'wrap'},
