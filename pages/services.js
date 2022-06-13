@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header/Header";
+import ServiceDetail from "../components/ServicePage/ServiceDetail";
 
 
 export default function Service(){
@@ -12,6 +13,7 @@ export default function Service(){
             </Head>
 
             <Header />
+            <ServiceDetail />
         </>
     )
 }
