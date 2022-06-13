@@ -54,7 +54,7 @@ export default function Team() {
                     </Box>
                 </Flex>
 
-            <Box marginTop={'10em'}>
+            <Box marginTop={'10em'} marginBottom={'10em'}>
                 <JoinUsToday />
             </Box>
             </Box>

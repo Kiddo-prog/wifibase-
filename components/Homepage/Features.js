@@ -22,7 +22,7 @@ export default function Features(){
                                 justifyContent={'space-around'}
                                 flexDirection={{base: 'column', md: 'column', lg: 'row'}}
                                 alignItems={'center'}
-                                marginX={{base: 10, md: 15, lg: 20}}
+                                marginX={{base: 10, md: 10, lg: 20}}
                                 marginY={20}
                                 _even={{
                                     sm: {flexDirection: 'row-reverse', flexWrap: 'wrap'},
@@ -86,7 +86,7 @@ export default function Features(){
                                     src={features.image} 
                                     alt={'features'} 
                                     objectFit={'cover'} 
-                                    boxSize={{base: 'md', md: 'md', lg: 'lg'}} />
+                                    boxSize={{base: 'sm', md: 'md', lg: 'lg'}} />
                             </Flex>
                     ))
                 }
