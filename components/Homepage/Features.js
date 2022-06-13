@@ -91,18 +91,34 @@ export default function Features(){
                 }
             </Box>
 
-                    <HStack spacing={10} justifyContent={'space-around'}>
+                    <Flex
+                        justifyContent={'space-around'}
+                        alignItems={'center'}
+                        alignContent={'center'}
+                        flexDirection={{base: 'column', md: 'row', lg: 'row'}}>
                         {
-                            data.Business.map((business, index) => (
-                                <Box key={index}>
-                                        <Box>
-                                            <Heading size={'2xl'}>{business.fig}</Heading>
-                                            <Text textAlign={'center'} mt={4}>{business.info}</Text>
+                            data.Business.map((business) => (
+                                <Box key={business.fig}>
+                                        <Box mb={5}>
+                                            <Heading 
+                                                size={'2xl'}
+                                                fontSize={{base: '2em', md: '2em', lg: '2.5em'}}
+                                                fontFamily={"'Poppins', sans-serif"}
+                                                textAlign={'center'}
+                                                >{business.fig}</Heading>
+                                            <Text 
+                                                textAlign={'center'} 
+                                                mt={4}
+                                                fontSize={{base: '1em', md: '0.8em', lg: '1em'}}
+                                                fontFamily={"'Poppins', sans-serif"}
+                                                textTransform={'capitalize'}>
+                                                    {business.info}
+                                            </Text>
                                         </Box>
                                 </Box>
                             ))
                         }
-                    </HStack>
+                    </Flex>
         </>
     )
 }
