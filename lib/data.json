@@ -128,6 +128,36 @@
     ],
     "CustomerDescription": "Our customer advocates are standing by 24/7 to support you via email and social media. We also have a comprehensive, regularly updated help center for those who prefer to find help yourself. Or if you are feeling social, we have a supportive community of creators, small business owners, and marketers on social media.",
     "Values": ["We want to build a different type of company that’s focused not only on the bottom line, but also the happiness of our customers and team, and our personal growth along the journey.", "Wifispace is committed to making Internet simple for all clients to connect across both our own network and the National Network. Our vision is to lead the market with services that harness the potential of the Internet and then differentiate with an encouraging customer service. We employ more than 2,500 enthusiastic.", "Security breaches are on the rise, and it’s not just large organizations that are being targeted. All businesses must take measures which include: "],
-    "WhatWeDo": ["Smartnet Internet Router new", "Free Modem and Router", "Latest WIFI Technology", "We Provide Excellent Services"]
+    "WhatWeDo": ["Smartnet Internet Router new", "Free Modem and Router", "Latest WIFI Technology", "We Provide Excellent Services"],
+    "Services": [
+        {
+            "name": "Web & App Development",
+            "description": "We build highly scalable websites and mobile applications at Smart Technologies here with maximun security guaranteed. Our team of expert developers are always on deck to get your site online, up and running!"
+        },
+        {
+            "name": "Base Station Setup",
+            "description": "We are here to help you concerning your base station setup as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your base station, you can be rest assured."
+        },
+        {
+            "name": "Radio Installation & Configuration",
+            "description": "We are here to help you concerning your radio installation and configuration as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your radio installation, you can be rest assured."
+        },
+        {
+            "name": "Network Setup & Installation",
+            "description": "We work within any budget of such to give you the best for your home and office network installations and configuration as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your network wired or wireless, you can be rest assured."
+        },
+        {
+            "name": "Solar, Inverter Setup",
+            "description": "We setup solar and inverter in a professionally handled standard and we are here to help with solar setup, which we are confident that we can handle without any downsides or being worried about power supply."
+        },
+        {
+            "name": "Tech Training",
+            "description": "We at Smart Technologies are dedicated to deliver our best in training individuals or groups in techs. We have experts on ground ready to deliver to the best of their abilities in a comfortable teaching manner."
+        },
+        {
+            "name": "Tech Support",
+            "description": "Our customer services have been proven to be of high quality standard and highly responsive to customer's requests and compliants with the solutions being rendered in a short amount of time"
+        }
+    ]
 
 }
