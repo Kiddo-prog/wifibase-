@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import ServiceDetail from "../components/ServicePage/ServiceDetail";
 
@@ -14,6 +15,7 @@ export default function Service(){
 
             <Header />
             <ServiceDetail />
+            <Footer />
         </>
     )
 }

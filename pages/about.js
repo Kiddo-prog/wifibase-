@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AboutDetail from "../components/AboutPage/AboutDetail";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 export default function About(){
@@ -13,6 +14,7 @@ export default function About(){
             <Header />
 
             <AboutDetail />
+            <Footer />
         </>
     )
 }

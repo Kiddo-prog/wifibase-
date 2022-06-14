@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import PricingDetail from "../components/Pricingpage/PricingDetail";
 
@@ -15,6 +16,7 @@ export default function Pricing(){
             <>
                 <Header />
                 <PricingDetail />
+                <Footer />
             </>
         </>
     )

@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header/Header'
 import { Stack } from '@chakra-ui/react'
 import CompanyDetail from '../components/Homepage/CompanyDetail'
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Header />
         <CompanyDetail />
       </Stack>
+      <Footer />
     </div>
   )
 }
