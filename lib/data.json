@@ -132,31 +132,38 @@
     "Services": [
         {
             "name": "Web & App Development",
-            "description": "We build highly scalable websites and mobile applications at Smart Technologies here with maximun security guaranteed. Our team of expert developers are always on deck to get your site online, up and running!"
+            "description": "We build highly scalable websites and mobile applications at Smart Technologies here with maximun security guaranteed. Our team of expert developers are always on deck to get your site online, up and running!",
+            "image": "/images/services/tech.jpg"
         },
         {
             "name": "Base Station Setup",
-            "description": "We are here to help you concerning your base station setup as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your base station, you can be rest assured."
+            "description": "We are here to help you concerning your base station setup as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your base station, you can be rest assured.",
+            "image": "/images/services/fibre.jpg"
         },
         {
             "name": "Radio Installation & Configuration",
-            "description": "We are here to help you concerning your radio installation and configuration as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your radio installation, you can be rest assured."
+            "description": "We are here to help you concerning your radio installation and configuration as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your radio installation, you can be rest assured.",
+            "image": "/images/services/radio.jpg"
         },
         {
             "name": "Network Setup & Installation",
-            "description": "We work within any budget of such to give you the best for your home and office network installations and configuration as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your network wired or wireless, you can be rest assured."
+            "description": "We work within any budget of such to give you the best for your home and office network installations and configuration as we are confident that our services concering such area have been tested and proven worth it. With us handling the set-up of your network wired or wireless, you can be rest assured.",
+            "image": "/images/services/tech.jpg"
         },
         {
             "name": "Solar, Inverter Setup",
-            "description": "We setup solar and inverter in a professionally handled standard and we are here to help with solar setup, which we are confident that we can handle without any downsides or being worried about power supply."
+            "description": "We setup solar and inverter in a professionally handled standard and we are here to help with solar setup, which we are confident that we can handle without any downsides or being worried about power supply.",
+            "image": "/images/services/solar.jpeg"
         },
         {
             "name": "Tech Training",
-            "description": "We at Smart Technologies are dedicated to deliver our best in training individuals or groups in techs. We have experts on ground ready to deliver to the best of their abilities in a comfortable teaching manner."
+            "description": "We at Smart Technologies are dedicated to deliver our best in training individuals or groups in techs. We have experts on ground ready to deliver to the best of their abilities in a comfortable teaching manner.",
+            "image": "/images/services/tech2.png"
         },
         {
             "name": "Tech Support",
-            "description": "Our customer services have been proven to be of high quality standard and highly responsive to customer's requests and compliants with the solutions being rendered in a short amount of time"
+            "description": "Our customer services have been proven to be of high quality standard and highly responsive to customer's requests and compliants with the solutions being rendered in a short amount of time",
+            "image": "/images/services/service.jpg"
         }
     ]
 
